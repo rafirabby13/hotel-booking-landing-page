@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-[#00548C] text-white rounded-b-2xl py-20">
       <div className="max-w-[87%] mx-auto flex md:flex-row flex-wrap gap-3 justify-between">
 
-        <div className="col-span-full lg:col-span-2 flex flex-col items-start">
+        <div className=" flex flex-col items-start">
           <div className="flex items-center mb-4">
             <img
               src="/logo.png"
