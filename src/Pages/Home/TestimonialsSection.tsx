@@ -53,15 +53,7 @@ const TestimonialsSection = () => {
     );
   };
 
-  // Determine which testimonials to display
-  // On mobile, show 1 testimonial. On larger screens, show 2.
-  const getVisibleTestimonials = () => {
-    if (window.innerWidth >= 768) { // md breakpoint
-      return [testimonials[currentIndex], testimonials[(currentIndex + 1) % testimonials.length]];
-    }
-    return [testimonials[currentIndex]];
-  };
-
+ 
   // Star Icon (filled and empty) - Lucide React: Star
   const StarIcon = () => (
     <svg
@@ -118,7 +110,7 @@ const TestimonialsSection = () => {
 
       {/* Testimonials Display */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {getVisibleTestimonials().map((testimonial) => (
+        {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
             <h3 className="text-xl font-bold text-gray-800 mb-3">"{testimonial.title}"</h3>
             <p className="text-gray-700 leading-relaxed mb-4">{testimonial.text}</p>
