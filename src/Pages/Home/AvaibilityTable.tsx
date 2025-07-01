@@ -68,20 +68,20 @@ const AvaibilityTable = () => {
         <div>
             <Table>
 
-                <TableHeader>
-                    <TableRow>
-                        <TableHead className="">Room Type</TableHead>
-                        <TableHead>Number of Guests</TableHead>
-                        <TableHead>Price </TableHead>
-                        <TableHead className="text-right">Your Choices</TableHead>
-                        <TableHead className="text-right">Select Rooms</TableHead>
-                        <TableHead className="text-right">Reserve Button </TableHead>
+                <TableHeader className='bg-prime-blue py-4 text-white'>
+                    <TableRow className='text-white'>
+                        <TableHead className="px-4 text-white">Room Type</TableHead>
+                        <TableHead className='px-4 text-white'>Number of Guests</TableHead>
+                        <TableHead className='px-4 text-white'>Price </TableHead>
+                        <TableHead className="text-right px-4 text-white">Your Choices</TableHead>
+                        <TableHead className="text-right px-4 text-white" >Select Rooms</TableHead>
+                        <TableHead className="text-right px-4 text-white">Reserve Button </TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     {
-                        rooms.map(room => <TableRow>
-                            <TableCell className="font-medium">
+                        rooms.map((room, i) => <TableRow key={i}>
+                            <TableCell className="font-medium border-r-2 border-prime-background   w-full sm:w-fit p-3">
                                 <div className='space-y-3'>
                                     <h1 className='text-[#007DD0] font-bold text-sm'>{room.name}</h1>
                                     <div className='flex items-center gap-4 text-[#252525] text-sm'>
@@ -89,7 +89,7 @@ const AvaibilityTable = () => {
                                         <p><BedDouble /></p>
                                         <p><BedDouble /></p>
                                     </div>
-                                    <div className='grid grid-cols-2 gap-2'>
+                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
                                         <div className="flex gap-2">
                                             <Badge variant={"outline"} ><Hospital /></Badge>
                                             <p className=" rounded-2xl border border-[#EDEDF2]/60">Room </p>
@@ -117,16 +117,21 @@ const AvaibilityTable = () => {
                                     </div>
                                 </div>
                             </TableCell>
-                            <TableCell className='flex '><UserRound /><UserRound /></TableCell>
-                            <TableCell><p className='font-bold text-lg'>${room.price}</p></TableCell>
-                            <TableCell className="text-right">$250.00</TableCell>
-                            <TableCell className="text-right">
+                            <TableCell className='  p-3 border-r-2 border-prime-background'>
+                                <div className='flex gap-2'>
+                                    <p><UserRound /></p>
+                                    <p><UserRound /></p>
+                                </div>
+                            </TableCell>
+                            <TableCell className=' p-3 border-r-2 border-prime-background'><p className='font-bold text-lg'>${room.price}</p></TableCell>
+                            <TableCell className=" p-3 text-right border-r-2 border-prime-background">$250.00</TableCell>
+                            <TableCell className=" p-3 text-right border-r-2 border-prime-background">
                                 <div className=''>
                                     <p>{room.features}</p>
                                     <p className='text-red-500'>{room.availability}</p>
                                 </div>
                             </TableCell>
-                            <TableCell className="text-right">
+                            <TableCell className=" p-3 text-right border-r-2 border-prime-background">
                                 <div className="flex justify-end items-center gap-2">
                                     <Select>
                                         <SelectTrigger className="w-16 h-8 text-sm">
@@ -143,7 +148,7 @@ const AvaibilityTable = () => {
                             </TableCell>
                         </TableRow>)
                     }
-                
+
                 </TableBody>
             </Table>
         </div>

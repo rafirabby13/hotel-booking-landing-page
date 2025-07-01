@@ -12,7 +12,7 @@ const Hero = () => {
     "/h7-min.jpg",
   ];
   return (
-    <div className="grid grid-cols-12 grid-rows-3 gap-1 rounded-2xl overflow-hidden">
+    <div className="sm:grid grid-cols-12 grid-rows-3 gap-1 rounded-2xl overflow-hidden">
       <div className="grid col-span-9 row-span-2  h-full">
         <img src="/h1-min.jpg" className="w-full h-full max-h-[500px] object-cover transition-transform duration-300 hover:scale-105" alt="" />
       </div>

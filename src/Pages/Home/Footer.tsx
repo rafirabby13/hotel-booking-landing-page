@@ -1,9 +1,10 @@
+import { Apple, AppleIcon, EqualApproximatelyIcon, Facebook, Github, Instagram, Locate, LocationEditIcon, Phone, PlaySquare, Twitter } from 'lucide-react';
 import React from 'react';
 
 const Footer = () => {
   return (
     <footer className="bg-[#00548C] text-white rounded-t-lg py-10">
-      <div className="max-w-[87%] mx-auto grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
+      <div className="max-w-[87%] mx-auto flex md:flex-row flex-wrap gap-8 justify-between">
         {/* Column 1: Logo, Description, Social Links, Address */}
         <div className="col-span-full lg:col-span-2 flex flex-col items-start">
           <div className="flex items-center mb-4">
@@ -21,27 +22,23 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-4 mb-6">
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-xl">
-              {/* Dummy Twitter Icon */}
-              <span>[Tw]</span>
+              <Twitter/>
+             
             </a>
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-xl">
-              {/* Dummy Facebook Icon */}
-              <span>[Fb]</span>
+              <Facebook/>
             </a>
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-xl">
-              {/* Dummy Instagram Icon */}
-              <span>[Ig]</span>
+              <Instagram/>
             </a>
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-xl">
-              {/* Dummy GitHub Icon */}
-              <span>[Gh]</span>
+              <Github/>
             </a>
           </div>
 
           {/* Address */}
           <div className="flex items-center text-blue-200 text-sm">
-            {/* Dummy Location Icon */}
-            <span>[Loc]</span>
+            <Locate/>
             <span className="ml-2">123 Travel St, Suite 100, City, Country</span>
           </div>
         </div>
@@ -61,13 +58,11 @@ const Footer = () => {
         <div className="col-span-full md:col-span-1 lg:col-span-1">
           <ul className="space-y-3">
             <li className="flex items-center text-blue-200">
-              {/* Dummy Phone Icon */}
-              <span>[Ph]</span>
+              <Phone/>
               <span className="ml-2">+1 (555) 123-4567</span>
             </li>
             <li className="flex items-center text-blue-200">
-              {/* Dummy Email Icon */}
-              <span>[Em]</span>
+              <EqualApproximatelyIcon/>
               <span className="ml-2">support@[yourappname].com</span>
             </li>
           </ul>
@@ -78,12 +73,10 @@ const Footer = () => {
           <p className="text-base font-semibold mb-3">Download Our App</p>
           <div className="flex space-x-4">
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-2xl">
-              {/* Dummy Play Store Icon */}
-              <span>[Play]</span>
+              <PlaySquare/>
             </a>
             <a href="#" className="text-blue-200 hover:text-white transition-colors text-2xl">
-              {/* Dummy Apple Store Icon */}
-              <span>[Apple]</span>
+              <AppleIcon/>
             </a>
           </div>
         </div>

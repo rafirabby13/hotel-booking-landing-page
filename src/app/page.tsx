@@ -13,16 +13,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="max-w-[87%] mx-auto space-y-10">
-      <HeroContent />
-      <Hero/>
-      <Features/>
-      <Avaibility/>
-      <AvaibilityTable/>
-      <About/>
-      <Area/> 
-      <TestimonialsSection/>
-      <PoliciesSection/>
-      <YouMayAlsoLikeSection/>
+       {/* <HeroContent /> */}
+      {/* <Hero/> */}
+      {/* <Features/> */}
+      {/* <Avaibility/> */}
+      {/* <AvaibilityTable/> */}
+      {/* <About/> */}
+      {/* <Area/>  */}
+      {/* <TestimonialsSection/> */}
+      {/* <PoliciesSection/> */}
+      {/* <YouMayAlsoLikeSection/> */}
     </div>
   );
 }

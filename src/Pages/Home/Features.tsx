@@ -14,11 +14,11 @@ const Features = () => {
             <div className="space-y-6 w-full md:w-2/3">
 
                 {/* Tabs */}
-                <div className="flex items-center gap-8 text-lg font-medium text-[#626262]">
+                <div className="flex flex-col sm:flex-row items-center gap-8 text-lg font-medium text-[#626262]">
                     <span className="">Over View</span>
                     <span className="">Features</span>
                     <span>Reviews</span>
-                    <span className="bg-[#007DD0] text-white flex items-center gap-2 py-2 px-4 rounded-full">
+                    <span className="bg-[#007DD0] text-white flex w-fit items-center gap-2 py-2 px-4 rounded-full">
                         <p><MessageCircle /></p>
                         <p>Message</p>
                     </span>
@@ -43,7 +43,7 @@ const Features = () => {
                 {/* Features */}
                 <div className="space-y-2">
                     <div className="text-lg font-semibold">Features</div>
-                    <div className="flex gap-6">
+                    <div className="flex sm:flex-row flex-col gap-2 sm:gap-6">
                         <div className="flex gap-2">
                             <Badge variant={"outline"} ><Wifi /></Badge>
                             <p className=" rounded-2xl border border-[#EDEDF2]/60">Wifi </p>

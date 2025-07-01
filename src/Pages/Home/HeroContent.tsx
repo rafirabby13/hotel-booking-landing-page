@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroContent = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="md:flex items-center justify-between">
       <div>
         <h1 className="text-3xl">El Aurassi Hotel</h1>
         <p>

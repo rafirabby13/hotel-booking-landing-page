@@ -30,7 +30,7 @@ const Area = () => {
 
         <div>
             <h2 className="text-lg font-semibold mb-4">Explore the Area</h2>
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
                 {/* Left Info List */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm flex-1">
@@ -53,14 +53,14 @@ const Area = () => {
                 </div>
 
                 {/* Right Map Card */}
-                <div className="w-full">
+                <div className="w-full border-2 border-prime-background rounded-md overflow-hidden">
                   
                         <img
                             src="/map.jpg"
                             alt="Map"
-                            className="w-full h-60 object-cover rounded-md"
+                            className="w-full h-60 object-cover "
                         />
-                        <p className=" p-7 text-center text-[#007DD0]">
+                        <p className=" p-3 bg-prime-background text-center text-[#007DD0]">
                             Explore the Area
                         </p>
                    

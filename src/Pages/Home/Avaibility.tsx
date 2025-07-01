@@ -10,7 +10,7 @@ const Avaibility = () => {
             <div className="space-y-6 p-10 border rounded-lg shadow border-[#007DD0]/40 w-fit">
 
                 {/* Header Filters */}
-                <div className="flex gap-4 items-end">
+                <div className="flex md:flex-row flex-col gap-4 md:items-end">
                     <div className='space-y-2'>
                         <Label>Check-In</Label>
                         <Badge variant="secondary" className="w-full justify-start p-3 rounded-full">
