@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Live LInk:  https://hotel-booking-landing-page-git-main-rafirabby13s-projects.vercel.app/
+## DAYF Booking Landing Page
+This repository contains the frontend code for the DAYF Booking landing page, showcasing a comprehensive hotel property detail view with various interactive sections and a responsive design.
 
-## Getting Started
+## About DAYF Booking
+DAYF Booking aims to make booking your next stay easy, affordable, and stress-free. With thousands of hotels worldwide, exclusive deals, and secure payment options, we're here to help you find the perfect place to stay, every time. This landing page provides a detailed view of a specific hotel property, allowing users to explore its features, check availability, read guest reviews, and understand booking policies.
 
-First, run the development server:
+## Features
+The landing page includes the following key sections and functionalities:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Hotel Overview
+Hero Section: A dynamic image gallery showcasing the property's visuals, including a large main image and a horizontal scrollable gallery of thumbnails.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Property Details: Displays the hotel name ("El Aurassi Hotel"), a brief description, and quick actions like "Reserve", "Bookmark", and "Share".
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Key Information: Highlights property type, typical stay duration, and estimated price.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Availability & Booking
+Date & Guest Selector: Intuitive interface for selecting check-in/check-out dates and the number of rooms and guests.
 
-## Learn More
+Room Availability Table: A responsive table detailing various room types, their amenities (beds, size, air conditioning, bathroom, TV, WiFi), price per week, availability status, and an option to select the number of rooms.
 
-To learn more about Next.js, take a look at the following resources:
+Reserve Functionality: "Reserve" buttons integrated within the availability table for direct booking.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Guest Experience
+"What Our Guests Say" Section: A testimonial carousel displaying guest reviews with titles, detailed text, author information, and star ratings. Includes navigation arrows and a "See All" link.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Property Information
+"About this property" Section: Provides a detailed description of the featured room type (e.g., "The Executive Suite").
 
-## Deploy on Vercel
+"Policies" Section: Clearly outlines check-in/check-out times, cancellation policies, children and bed policies, age restrictions, pet policies, and accepted payment methods.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Explore Area
+"Explore the Area" Section: Showcases nearby points of interest categorized by "Restaurants & cafes", "Shops & Markets", "Beaches", and "Public transport", each with distance information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Navigation & Footer
+Responsive Navbar: Features a logo, main navigation links (Home, Hotels, House, About Us, Contact Us), language selector, "List your property" button, and user profile.
+
+Comprehensive Footer: Includes the company logo and description, social media links (Twitter, Facebook, Instagram, Github), contact information (phone, email), and links to download the mobile app (Google Play Store, Apple App Store).
+
+## Technologies Used
+React: Frontend JavaScript library for building user interfaces.
+
+Next.js: React framework for production-grade applications, enabling server-side rendering and static site generation.
+
+Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
+
+Lucide React: A collection of open-source icons for React applications.
+
+React Icons: A library providing popular icon sets (e.g., Font Awesome, Material Design) as React components.
+
+Swiper.js: Modern touch slider with hardware accelerated transitions.
