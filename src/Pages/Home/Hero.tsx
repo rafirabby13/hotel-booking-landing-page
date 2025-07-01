@@ -2,15 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
-  const images = [
-    "/h1-min.jpg",
-    "/h2-min.jpg",
-    "/h3-min.jpg",
-    "/h4-min.jpg",
-    "/h5-min.jpg",
-    "/h6-min.jpg",
-    "/h7-min.jpg",
-  ];
+ 
   return (
     <div className="sm:grid grid-cols-12 grid-rows-3 gap-1 rounded-2xl overflow-hidden">
       <div className="grid col-span-9 row-span-2  h-full">
