@@ -7,22 +7,24 @@ import Hero from "@/Pages/Home/Hero";
 import HeroContent from "@/Pages/Home/HeroContent";
 import PoliciesSection from "@/Pages/Home/PoliciesSection";
 import TestimonialsSection from "@/Pages/Home/TestimonialsSection";
+
 import YouMayAlsoLikeSection from "@/Pages/Home/YouMayAlsoLikeSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="max-w-[87%] mx-auto space-y-10">
-       {/* <HeroContent /> */}
-      {/* <Hero/> */}
-      {/* <Features/> */}
-      {/* <Avaibility/> */}
-      {/* <AvaibilityTable/> */}
-      {/* <About/> */}
-      {/* <Area/>  */}
-      {/* <TestimonialsSection/> */}
-      {/* <PoliciesSection/> */}
-      {/* <YouMayAlsoLikeSection/> */}
+       <HeroContent />
+      <Hero/>
+      <Features/>
+      <Avaibility/>
+      <AvaibilityTable/>
+      <About/>
+      <Area/> 
+      <TestimonialsSection/>
+      <PoliciesSection/>
+      <YouMayAlsoLikeSection/>
+    
     </div>
   );
 }

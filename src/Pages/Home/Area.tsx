@@ -36,15 +36,15 @@ const Area = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm flex-1">
                     {items.map((item, i) => (
                         <div key={i}>
-                            <div className="flex items-center font-medium mb-1">
+                            <div className="flex items-center font-medium mb-3 text-prime-text">
                                 {item.icon}
                                 {item.category}
                             </div>
-                            <ul className="text-gray-600">
+                            <ul className="text-second-text">
                                 {item.places.map((place, index) => (
                                     <li key={index} className="flex justify-between">
                                         <span>{place}</span>
-                                        <span className="text-xs text-gray-400">1.4 km</span>
+                                        <span className="text-xs ">1.4 km</span>
                                     </li>
                                 ))}
                             </ul>
@@ -53,14 +53,14 @@ const Area = () => {
                 </div>
 
                 {/* Right Map Card */}
-                <div className="w-full border-2 border-prime-background rounded-md overflow-hidden">
+                <div className="w-full border-2 border-prime-background rounded-md overflow-hidden  shadow">
                   
                         <img
                             src="/map.jpg"
                             alt="Map"
                             className="w-full h-60 object-cover "
                         />
-                        <p className=" p-3 bg-prime-background text-center text-[#007DD0]">
+                        <p className=" p-3  text-center text-[#007DD0] text-sm font-medium">
                             Explore the Area
                         </p>
                    

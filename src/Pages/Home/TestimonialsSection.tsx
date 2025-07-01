@@ -1,4 +1,5 @@
 "use client"
+import { StarIcon } from 'lucide-react';
 import React, { useState } from 'react';
 
 const TestimonialsSection = () => {
@@ -20,25 +21,7 @@ const TestimonialsSection = () => {
       location: "Morocco",
       date: "", // Date not visible in image for this one
       rating: 4,
-    },
-    {
-      id: 3,
-      title: "Great Service and Comfortable Rooms",
-      text: "Had a wonderful time at the hotel. The staff was incredibly friendly and attentive. The room was very comfortable and clean, and the bed was super cozy. Highly recommend for a relaxing getaway.",
-      author: "Ahmed K.",
-      location: "Egypt",
-      date: "15.09.2024",
-      rating: 4,
-    },
-    {
-      id: 4,
-      title: "Fantastic Location and Delicious Food",
-      text: "The hotel's location was perfect for exploring the city. We also enjoyed the breakfast buffet every morning – a great variety of delicious options. Will definitely come back!",
-      author: "Maria S.",
-      location: "Spain",
-      date: "01.11.2024",
-      rating: 5,
-    },
+    }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,23 +37,7 @@ const TestimonialsSection = () => {
   };
 
  
-  // Star Icon (filled and empty) - Lucide React: Star
-  const StarIcon = () => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-    //   fill={filled ? "currentColor" : "none"}
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={"text-yellow-400"}
-    >
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-    </svg>
-  );
+  
 
   // Arrow Left Icon - Lucide React: ArrowLeft
   const ArrowLeft = () => (
@@ -87,22 +54,22 @@ const TestimonialsSection = () => {
       <h2 className="text-2xl font-bold text-gray-800 mb-6">What Our Guests Say</h2>
 
       {/* Navigation and See All */}
-      <div className="flex justify-between items-center mb-6 p-2 border border-gray-300 rounded-lg">
+      <div className="flex justify-between items-center mb-6 p-2 rounded-lg">
         <div className="flex space-x-2">
           <button
             onClick={prevTestimonial}
-            className="p-2 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-full border border-gray-300 text-second-text hover:bg-gray-100 transition-colors"
           >
             <ArrowLeft />
           </button>
           <button
             onClick={nextTestimonial}
-            className="p-2 rounded-full border border-gray-300 text-blue-600 hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-full border border-gray-300 text-prime-blue hover:bg-gray-100 transition-colors"
           >
             <ArrowRight />
           </button>
         </div>
-        <a href="#" className="text-blue-600 font-semibold flex items-center space-x-1 hover:underline">
+        <a href="#" className="text-prime-blue font-semibold flex items-center space-x-1 hover:underline border-b-2 border-prime-blue px-2 pb-1">
           <span>See All</span>
           <ArrowRight />
         </a>
@@ -111,13 +78,13 @@ const TestimonialsSection = () => {
       {/* Testimonials Display */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-            <h3 className="text-xl font-bold text-gray-800 mb-3">"{testimonial.title}"</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">{testimonial.text}</p>
+          <div key={testimonial.id} className="bg-white p-6 rounded-lg  border border-gray-200 flex flex-col justify-between">
+            <h3 className="text-xl font-bold text-prime-text mb-3">"{testimonial.title}"</h3>
+            <p className="text-second-text leading-relaxed mb-4">{testimonial.text}</p>
             <div className="flex items-center mb-4">
-              {/* {[...Array(5)].map((_, i) => (
-                <StarIcon key={i} filled={i < testimonial.rating} />
-              ))} */}
+              {[...Array(5)].map((_, i) => (
+                <StarIcon  className={i < testimonial.rating ? "text-[#FFC15E] fill-[#FFC15E]" : "text-gray-300"} key={i} />
+              ))}
             </div>
             <div className="flex justify-between items-center text-gray-600 text-sm">
               <p className="font-semibold">— {testimonial.author}, {testimonial.location}</p>

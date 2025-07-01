@@ -82,14 +82,14 @@ const AvaibilityTable = () => {
                     {
                         rooms.map((room, i) => <TableRow key={i}>
                             <TableCell className="font-medium border-r-2 border-prime-background   w-full sm:w-fit p-3">
-                                <div className='space-y-3'>
+                                <div className='space-y-3 '>
                                     <h1 className='text-[#007DD0] font-bold text-sm'>{room.name}</h1>
                                     <div className='flex items-center gap-4 text-[#252525] text-sm'>
                                         <p>2 single beds</p>
                                         <p><BedDouble /></p>
                                         <p><BedDouble /></p>
                                     </div>
-                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
+                                    <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                                         <div className="flex gap-2">
                                             <Badge variant={"outline"} ><Hospital /></Badge>
                                             <p className=" rounded-2xl border border-[#EDEDF2]/60">Room </p>
