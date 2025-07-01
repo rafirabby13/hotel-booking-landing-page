@@ -2,6 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
+  const a={
+    a:"a"
+  }
  
   return (
     <div className="sm:grid grid-cols-12 grid-rows-3 gap-1 rounded-2xl overflow-hidden">
